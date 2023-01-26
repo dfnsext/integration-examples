@@ -1,0 +1,34 @@
+{
+  "name": "@dfns/blockchain-integrations-ethereum-wallet",
+  "version": "1.0.27",
+  "main": "dist/index.js",
+  "license": "SEE LICENSE IN XKEY_LICENSE",
+  "devDependencies": {
+    "@types/elliptic": "^6.4.14",
+    "@types/jest": "^27.4.0",
+    "@types/web3": "^1.2.2",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "jest": "^27.4.7",
+    "prettier": "^2.5.1",
+    "rimraf": "3.0.2",
+    "ts-jest": "^27.1.3",
+    "ts-node": "^10.4.0",
+    "typescript": "4.5.5"
+  },
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "build": "node_modules/.bin/tsc",
+    "test": "jest spec",
+    "cb": "npm run clean && npm run build",
+    "format": "prettier --write \"src/**/*.{js,ts}\""
+  },
+  "dependencies": {
+    "@dfns/bik": "^3.2.2",
+    "@dfns/cloud-library": "^2.11.1",
+    "browser-process-hrtime": "^1.0.0",
+    "decimal.js": "^10.3.1",
+    "rlp": "^2.2.6",
+    "web3": "^1.7.0"
+  }
+}
